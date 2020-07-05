@@ -6,7 +6,7 @@ import { HashRouter as Router } from 'react-router-dom'
 
 
 render(
-  <Router basename='/'>
+  <Router>
     <App />
   </Router>,
 
