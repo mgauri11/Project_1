@@ -1,26 +1,32 @@
 import React from 'react';
-import logo from './logo.svg';
+import todo from '../src/components/todo.jpg';
 import './App.css';
-//
-function App() {
+import Home from './components/Home'
+import Login from './components/Login'
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import "bootstrap/dist/css/bootstrap.min.css";
+import { Container } from "react-bootstrap";
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <Router>
+      <div className="App">
+        
+        <Container>
+          <img src={todo} className="App-logo" alt="logo" />
+          <Route exact path="/home">
+              <Home />
+            </Route>
+          <Route exact path="/login">
+            <Login />
+          </Route>
+
+        </Container>
+          
+         
+      </div>
+    </Router>
+);
 }
 
 export default App;
