@@ -26,43 +26,47 @@ const Login = () => {
     };
 
     return (
-        <Form onSubmit={onSubmit}>
-            <Form.Group controlId="formBasicEmail">
-                <Row>
-                    <Col xs="10" sm="11">
-                        <Form.Control
-                            type="email"
-                            placeholder="Enter email"
-                            onChange={e => {
-                                setEmail(e.target.value);
-                                console.log(email);
-                            }}
-                            required
-                        />
-                        <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
-                        
-                    </Col>
-                </Row>
-            </Form.Group>
+        <div>
+            <Form onSubmit={onSubmit}>
+                <Form.Group controlId="formBasicEmail">
+                    <Row>
+                        <Col xs="10" sm="11">
+                            <Form.Control
+                                type="email"
+                                placeholder="Enter email"
+                                onChange={e => {
+                                    setEmail(e.target.value);
+                                    console.log(email);
+                                }}
+                                required
+                            />
+                            <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
+                            
+                        </Col>
+                    </Row>
+                </Form.Group>
 
-            <Form.Group controlId="formBasicPassword">
-                <Row>
-                    
-                    <Col xs="10" sm="11">
-                        <Form.Control
-                            type="password"
-                            placeholder="Password"
-                            onChange={e => setPassword(e.target.value)}
-                        />
-                        <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
-                    </Col>
-                </Row>
-            </Form.Group>
-            
-            <FormGroup>
-                <Button type="submit">Submit</Button>
-            </FormGroup>
-        </Form>
+                <Form.Group controlId="formBasicPassword">
+                    <Row>
+                        
+                        <Col xs="10" sm="11">
+                            <Form.Control
+                                type="password"
+                                placeholder="Password"
+                                onChange={e => setPassword(e.target.value)}
+                            />
+                            <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
+                        </Col>
+                    </Row>
+                </Form.Group>
+                
+                <FormGroup>
+                    <Button type="submit">Submit</Button>
+                </FormGroup>
+            </Form>
+
+        </div>
+      
     );
 };
 
