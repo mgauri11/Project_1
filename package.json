@@ -1,0 +1,17 @@
+{
+  "name": "prototype-app",
+  "version": "1.0.0",
+  "description": "This is the root project for our frontend and backend",
+  "main": "index.js",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "dev-start": "concurrently \"cd Express-backend/server && yarn nodemon server.js\" \"cd react-frontend && yarn start\""
+  },
+  "devDependencies": {
+    "concurrently": "^5.2.0"
+  },
+  "dependencies": {
+    "history": "^5.0.0"
+  }
+}

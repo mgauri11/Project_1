@@ -1,25 +1,30 @@
 import React from 'react';
-//import todo from '../src/components/todo.jpg';
 import './App.css';
 import Home from './components/Home'
 import Login from './components/Login'
-import { BrowserRouter as Router, Route } from "react-router-dom";
-import "bootstrap/dist/css/bootstrap.min.css";
-import { Container } from "react-bootstrap";
-//import Nav from "../src/components/Nav/Nav";
+import Todo from './components/todo'
+import Contact from "./components/Contact"
+import { BrowserRouter as Router, Route,Switch } from "react-router-dom";
+
 
 const App = () => {
+  
+       
   return (
-    <Router>
-      <div className="App">
-        <Route exact path="/home">
-            <Home />
-          </Route>
-        <Route exact path="/login">
-          <Login />
-        </Route>   
-      </div>
-    </Router>
+    
+      <Router>
+        <main>
+          <Switch>
+            <Route path="/" exact component={Home} />
+            <Route path="/login"  component={Login} />
+            <Route path="/todo"  component={Todo} />
+            <Route path="/Contact-us" component={Contact} />
+          </Switch>
+          
+        </main>
+      </Router>
+     
+    
 );
 }
 
