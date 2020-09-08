@@ -13,3 +13,13 @@ a system which will help everyone to track their performance at the same time ge
 
 The another reason to implement this system was to apply all the knowledge gained during the internship experience improve the coding skills 
 and web application development skills.
+
+Functionalities implemented so far are as follows:
+
+1) The user can register/login at the same time and then can enter the endpoint for creating and viewing the todolist with a option to create and edit the list.
+
+2) The list added and login credentials are stored in the database (MongoDB).
+
+3) The styling for now is not in place, I am working on implementing the web design using Blueprint React and React Bootstrap.
+
+4) I am still working on the contact-us page, for now it is some random layout which I had thought initially(it will be updated).
