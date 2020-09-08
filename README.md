@@ -9,7 +9,7 @@ and try to improve every week.
 The system currently is on very initial stages and will be developed as required. 
 The idea behind this project was my personal experience of dealing with day-to-day life and implementing a system which will help everyone track their performance
 in daily life be it work, personal habits,health,food related habits. I believe if someone is trying to track themselves on all levels their has to be 
-a system which will help everyone to track their performance at the same time get insipired and motivated at the same time to continue on working and improving yourself.
+a system which will help everyone to track their performance at the same time get insipired and motivated to continue on working and improving oneself.
 
 The another reason to implement this system was to apply all the knowledge gained during the internship experience improve the coding skills 
 and web application development skills.
