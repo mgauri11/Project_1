@@ -27,8 +27,8 @@ Functionalities implemented so far are as follows:
 
 #Steps to run the application:
 
-1) Run yarn install in root directory, Frontend folder and backend folder (just to ensure all the required packages are installed before running the application).
+1)Run yarn install in root directory, Frontend folder and backend folder (just to ensure all the required packages are installed before running the application).
 
 2)After installing yarn, from the root directory run the command- Yarn dev-start (which will run the backend and frontend folders concurrently).
 
-3) The application should be running on port 4000, http://localhost:4000/ 
+3)The application should be running on port 4000, http://localhost:4000/ 
